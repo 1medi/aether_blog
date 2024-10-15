@@ -1,8 +1,9 @@
 ---
 title: "Logo Ideations"
-excerpt: "Using our A.I Assistant, never misinterpret important documents ever again. We use A.I to breakdown and compartmentalize forms so you don't have to. "
-coverImage: "/assets/blog/dynamic-routing/logomockup2.jpeg"
+excerpt: "Using our A.I Assistant, never misinterpret important documents ever again. We use A.I to breakdown and compartmentalize forms so you don't have to."
+coverImage: "/assets/blog/dynamic-routing/Aetherlogo1.png"
 date: "2024-10-16T05:35:07.322Z"
+type: "design" 
 author:
   name: Aether Design Team
   picture: "/assets/blog/authors/tt.jpg"
@@ -10,4 +11,11 @@ ogImage:
   url: "/assets/blog/dynamic-routing/logomockup2.jpeg"
 ---
 
-I love Aether
+This past week we worked hard to produce some high quality logos (In addition to the one above!):
+
+
+![Logo Design](/assets/blog/dynamic-routing/Aetherlogo2.png)
+
+![Logo Design](/assets/blog/dynamic-routing/Aetherlogo3.png)
+
+We had discussions about what typeface to use and were leaning towards Italiana and Ahganirya
