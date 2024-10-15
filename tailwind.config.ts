@@ -20,6 +20,8 @@ const config: Config = {
         "accent-7": "#333",
         success: "#0070f3",
         cyan: "#79FFE1",
+        "powder-blue": "#8eaacd",
+        "silver-lake-blue": "#5c8cc6",
       },
       spacing: {
         28: "7rem",
