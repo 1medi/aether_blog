@@ -18,4 +18,4 @@ This past week we worked hard to produce some high quality logos (In addition to
 
 ![Logo Design](/assets/blog/dynamic-routing/Aetherlogo3.png)
 
-We had discussions about what typeface to use and were leaning towards Italiana and Ahganirya
+We had discussions about what typeface to use and were leaning towards Italiana and Ahganirya. But, the document and compass signifies how we guide / help users through complex forms (find the right way ?); the document represents our app’s function of assisting with form completion and paperwork, and the compass represents the direction and supporting.
