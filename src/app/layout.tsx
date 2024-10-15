@@ -10,8 +10,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: `Aether`,
+  description: `Development Blog for Aether`,
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
@@ -25,16 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/favicon/apple-touch-icon.png"
-        />
+       
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon/favicon-32x32.png"
+          href="/favicon/favicon1.png"
         />
         <link
           rel="icon"
