@@ -1,15 +1,26 @@
 ---
-title: "What is a Aether?"
-excerpt: "Our project team is tackling the issues that caregivers are facing when helping seniors fill out important documents. By using ai, we are making it easier for caregivers to help the seniors."
-coverImage: "/assets/blog/dynamic-routing/lbjcover.jpg"
-date: "2024-09-17T05:35:07.322Z"
+title: "What is Aether?"
+excerpt: "Our project team is tackling the issues that seniors are facing regarding important documents. By using ai, older individuals can have an easier time reading and comprehending important documents that they would normally have issues with."
+coverImage: "/assets/blog/dynamic-routing/aetherlogo.png"
+date: "2024-10-09T05:35:07.322Z"
 author:
-  name: Aether Team
+  name: Madi Tabon
   picture: "/assets/blog/authors/jj.jpeg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/lbjcover.jpg"
+  url: "/assets/blog/dynamic-routing/aetherlogo.png"
 ---
 
-The Aether team is tackling the issues that caregivers are facing when helping seniors fill out important documents. By using ai, we are making it easier for caregivers to help the seniors. We are creating an app that will simplify, summarize, and steamline the document filling process. The current state of the project is in early development with initial planning, ideation, and role orientation in completed. We are currently finalizing our logo and setting up our lo-fi prototype. Keep and eye on our blog to continue to see our progress!
+Our project team is tackling the issues that seniors are facing regarding important documents. By using A.I, older individuals can have an easier time reading and comprehending important documents that they would normally have issues with. The current state of the project is in early development with initial planning and role orientation in progress.
+
+## Our Key Values
+
+Our key values are to Summarize, Simplify, Autocomplete. 
 
 
+Summarize the document to make sure you don't miss out on key details on any important documents.
+
+Simplify by condensing and compartmentalizing all that information to make it easier for our audience to comprehend and dissect. 
+
+Autocomplete the process to make it seamless and stress free, turn a tedious process into one you can complete in minutes.
+
+In mythology, Aether refers to the pure, clean air, symbolizing clarity and ease, which aligns with our app's purpose of simplifying form filling.
