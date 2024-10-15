@@ -7,7 +7,7 @@ export function Intro() {
         Aether
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-      Summarize, Simplify, Autocomplete
+      Summarize, Simplify, Streamline
       </h4>
     </section>
   );
