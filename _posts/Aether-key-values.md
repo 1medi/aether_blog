@@ -4,13 +4,13 @@ excerpt: "Here at Aether, we are developing our app with a focus on our key valu
 - Simplify
 - Summarize
 - Streamline"
-coverImage: "/assets/blog/dynamic-routing/aetherlogomockup.png"
+coverImage: "/assets/blog/dynamic-routing/aetherlogo.png"
 date: "2024-10-14T05:35:07.322Z"
 author:
   name: Parnell Tse
   picture: "/assets/blog/authors/jj.jpeg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/aetherlogomockup.png"
+  url: "/assets/blog/dynamic-routing/aetherlogo.png"
 ---
 
 ## Our Key Values
