@@ -10,12 +10,12 @@ export function Intro() {
           className="w-[400px] h-auto"
         />
         <p
-          className=" pl-[135px]"
+          className="mt-2 pl-[135px]"
         >
           Designed and developed by Aether team
         </p>
       </div>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8 pb-[40px]">
       Clarify, Summarize, Streamline
       </h4>
     </section>
