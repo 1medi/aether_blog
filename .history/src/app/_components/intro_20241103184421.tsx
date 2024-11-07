@@ -2,7 +2,7 @@ import { CMS_NAME } from "@/lib/constants";
 
 export function Intro() {
   return (
-    <section className="flex-col md:flex-row flex items-end md:justify-between mt-4 mb-4 md:mb-12 p-4">
+    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
       <div>
         <img 
           src="../assets/blog/dynamic-routing/Aether_Logo.png"
@@ -10,13 +10,13 @@ export function Intro() {
           className="w-[400px] h-auto"
         />
         <p
-          className=" pl-[135px]"
+          className="mt-2 pl-[200px]"
         >
           Designed and developed by Aether team
         </p>
       </div>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-      Clarify, Summarize, Streamline
+      Summarize, Simplify, Streamline
       </h4>
     </section>
   );
