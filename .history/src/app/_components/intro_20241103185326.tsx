@@ -15,7 +15,7 @@ export function Intro() {
           Designed and developed by Aether team
         </p>
       </div>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
+      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8 pb-[20px]">
       Clarify, Summarize, Streamline
       </h4>
     </section>
