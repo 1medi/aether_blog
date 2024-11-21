@@ -29,6 +29,15 @@ export default async function Post({ params }: Params) {
             author={post.author}
           />
           <PostBody content={content} />
+          {/* Render video if it exists */}
+          {post.video && (
+            <div className="mt-8">
+              <video controls className="w-full aspect-video">
+                <source src={post.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          )}
         </article>
       </Container>
     </main>
