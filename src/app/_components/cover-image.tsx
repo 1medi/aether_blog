@@ -10,15 +10,15 @@ type Props = {
 
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
-    <Image
-      src={src}
-      alt={`Cover Image for ${title}`}
-      className={cn("shadow-sm mx-auto", {
-        "hover:shadow-lg transition-shadow duration-200": slug,
-      })}
-      width={800}
-      height={230}
-    />
+<Image
+  src={src}
+  alt={`Cover Image for ${title}`}
+  className={cn("shadow-sm mx-auto", {
+    "hover:shadow-lg transition-shadow duration-200": slug,
+  })}
+  width={300} // Reduce this value
+  height={215} // Reduce this value proportionally
+/>
   );
   return (
     <div className="sm:mx-0">
