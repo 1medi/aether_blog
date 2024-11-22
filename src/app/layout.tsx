@@ -16,6 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [HOME_OG_IMAGE_URL],
   },
+  
 };
 
 export default function RootLayout({
@@ -31,13 +32,13 @@ export default function RootLayout({
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon/favicon1.png"
+          href="/favicon/aether-32x32.png"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon/favicon-16x16.png"
+          href="/favicon/aether-16x16.png"
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link
