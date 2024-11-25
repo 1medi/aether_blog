@@ -1,0 +1,229 @@
+/* Reset */
+body, h1, h2, p, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Container */
+  body {
+    background-color: #ffffff; 
+    color: #333333; 
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-mode {
+    background-color: #000000; 
+    color: #ffffff; 
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 200px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .description {
+    margin: 10px auto;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 800px;
+  }
+  
+  /* Theme Toggle Button */
+  .theme-toggler {
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  body.dark-mode .theme-toggler {
+    background-color: #555555;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    background-color: #1e3a8a;
+    padding: 10px 0;
+  }
+  
+  body.dark-mode .navbar {
+    background-color: #004080;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    background-color: white;
+    color: #1e3a8a;
+  }
+  
+  body.dark-mode .nav-links li a:hover,
+  body.dark-mode .nav-links li a.active {
+    background-color: #ffffff;
+    color: #004080;
+  }
+  
+  /* Video Section */
+  .video-section {
+    background-color: #f3f3f3;
+    padding: 50px 0;
+  }
+  
+  body.dark-mode .video-section {
+    background-color: #222222;
+  }
+  
+  .video-placeholder {
+    height: 300px;
+    background-color: #d3d3d3;
+    line-height: 300px;
+    text-align: center;
+    color: #666666;
+    font-size: 1.5rem;
+  }
+  
+  body.dark-mode .video-placeholder {
+    background-color: #555555;
+    color: #cccccc;
+  }
+  
+  /* Features Section */
+  .features-section {
+    background-color: white;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    min-height: 400px;
+  }
+  
+  body.dark-mode .features-section {
+    background-color: #000000;
+  }
+  
+  .features-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  body.dark-mode .features-title {
+    color: #ffffff;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .feature-box {
+    height: 150px;
+    background-color: #d3d3d3;
+    border-radius: 10px;
+  }
+  
+  body.dark-mode .feature-box {
+    background-color: #555555;
+  }
+  
+  /* Learn More Button */
+  .learn-more-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  body.dark-mode .learn-more-btn {
+    background-color: white;
+    color: #1e3a8a;
+  }
+  
+  .learn-more-btn:hover {
+    background-color: #162d6d;
+  }
+  
+  body.dark-mode .learn-more-btn:hover {
+    background-color: #e6e6e6;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  body.dark-mode .footer {
+    background-color: #004080;
+  }
+  
+  .footer-logo {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-text,
+  .footer-email {
+    margin: 5px 0;
+    text-align: right;
+  }
+  
+  body.dark-mode .footer-text,
+  body.dark-mode .footer-email {
+    color: #cccccc;
+  }
+  

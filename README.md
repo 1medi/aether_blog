@@ -1,5 +1,1 @@
-#Aether
-
-- Clarify
-- Summarize
-- Streamline
+# Aether Blog Page
