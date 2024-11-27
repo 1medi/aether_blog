@@ -108,6 +108,17 @@ body, h1, h2, p, ul, li, a, button {
   }
   
   /* Video Section */
+
+  .video-section video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  .video-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
   .video-section {
     background-color: #f3f3f3;
     padding: 50px 0;
