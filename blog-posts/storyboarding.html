@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aether's Key Values</title>
+  <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <img src="../images/aether_logo.png" alt="Aether Logo" class="logo">
+      <button id="theme-toggler" class="theme-toggler">🌙</button>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../blog.html" class="active">Blog</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../team.html">Team</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section class="container">
+      <h1 class="post-title">Aether's Key Values</h1>
+      <p class="post-meta">By Parnell Tse | Last Edited: November 20, 2024, 2:30 PM</p>
+      <div class="post-content">
+        <img src="../images/aether_logo.png" alt="Aether's Key Values">
+        <p>Here at Aether, we are developing our app with a focus on our key values:</p>
+        <ul>
+          <li>Simplify</li>
+          <li>Summarize</li>
+          <li>Streamline</li>
+        </ul>
+        <p>Our aim is to create a user-friendly experience by focusing on accessibility and efficiency.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <img src="../images/footer_logo.png" alt="Aether Logo" class="footer-logo">
+      <div>
+        <p class="footer-text">Saving Caretakers' Time, So They Can Focus On What Matters Most.</p>
+        <p class="footer-email">aetherformapp@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Light/Dark Mode Toggle
+    const themeToggler = document.getElementById("theme-toggler");
+    const rootElement = document.documentElement;
+
+    // Apply the saved theme or default to light
+    const savedTheme = localStorage.getItem("theme") || "light";
+    rootElement.setAttribute("data-theme", savedTheme);
+    themeToggler.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+
+    // Add event listener for toggle
+    themeToggler.addEventListener("click", () => {
+      const currentTheme = rootElement.getAttribute("data-theme");
+      const newTheme = currentTheme === "light" ? "dark" : "light";
+
+      // Apply and save the new theme
+      rootElement.setAttribute("data-theme", newTheme);
+      themeToggler.textContent = newTheme === "dark" ? "☀️" : "🌙";
+      localStorage.setItem("theme", newTheme);
+    });
+  </script>
+</body>
+</html>
