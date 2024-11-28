@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +7,19 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Header and Navigation are similar -->
+  <!-- Header -->
   <header class="header">
     <div class="container header-container">
       <img src="images/aether_logo.png" alt="Aether Logo" class="logo">
       <button id="theme-toggler" class="theme-toggler">🌙</button>
     </div>
+    <div class="container header-content">
+      <h1 class="title">Aether Blog</h1>
+      <p class="description">Explore our latest updates and news.</p>
+    </div>
   </header>
+
+  <!-- Navigation Bar -->
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -23,17 +29,107 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
+  <!-- Main Content -->
   <main>
     <section class="container">
-      <h1>Welcome to the Blog</h1>
-      <p>Explore our latest updates and news.</p>
+      <div class="blog-container" id="blog-container">
+        <!-- Blog posts will be dynamically inserted here -->
+      </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>Saving Caretakers' Time, So They Can Focus On What Matters Most.</p>
+      <img src="images/footer_logo.png" alt="Aether Logo" class="footer-logo">
+      <p class="footer-text">Saving Caretakers' Time, So They Can Focus On What Matters Most.</p>
+      <p class="footer-email">aetherformapp@gmail.com</p>
     </div>
   </footer>
   <script src="js/index.js"></script>
+  <script>
+    // Blog Data
+    const blogs = [
+      {
+        title: "Aether's Key Values",
+        description: "Discover our three core values: Simplify, Summarize, and Streamline.",
+        image: "images/aether_logo.png",
+        link: "blog-posts/aether-key-values.html",
+        author: "Parnell Tse",
+        edited: "2024-11-20T14:30:00",
+      },
+      {
+        title: "Aether's Paraphrasing Feature",
+        description: "Learn about our new paraphrasing feature for caretakers.",
+        image: "images/aether_logo.png",
+        link: "blog-posts/aether-paraphrasing-feature.html",
+        author: "Madi Tabon",
+        edited: "2024-11-18T09:15:00",
+      },
+      {
+        title: "Aether's Paraphrasing Feature",
+        description: "Learn about our new paraphrasing feature for caretakers.",
+        image: "images/aether_logo.png",
+        link: "blog-posts/aether-paraphrasing-feature.html",
+        author: "Madi Tabon",
+        edited: "2024-11-18T09:15:00",
+      },
+      {
+        title: "Aether's Paraphrasing Feature",
+        description: "Learn about our new paraphrasing feature for caretakers.",
+        image: "images/aether_logo.png",
+        link: "blog-posts/aether-paraphrasing-feature.html",
+        author: "Madi Tabon",
+        edited: "2024-11-18T09:15:00",
+      },
+      {
+        title: "Aether's Paraphrasing Feature",
+        description: "Learn about our new paraphrasing feature for caretakers.",
+        image: "images/aether_logo.png",
+        link: "blog-posts/aether-paraphrasing-feature.html",
+        author: "Madi Tabon",
+        edited: "2024-11-18T09:15:00",
+      },
+      {
+        title: "Aether's Paraphrasing Feature",
+        description: "Learn about our new paraphrasing feature for caretakers.",
+        image: "images/aether_logo.png",
+        link: "blog-posts/aether-paraphrasing-feature.html",
+        author: "Madi Tabon",
+        edited: "2024-11-18T09:15:00",
+      },
+      {
+        title: "Aether's Paraphrasing Feature",
+        description: "Learn about our new paraphrasing feature for caretakers.",
+        image: "images/aether_logo.png",
+        link: "blog-posts/aether-paraphrasing-feature.html",
+        author: "Madi Tabon",
+        edited: "2024-11-18T09:15:00",
+      },
+      {
+        title: "Aether's Paraphrasing Feature",
+        description: "Learn about our new paraphrasing feature for caretakers.",
+        image: "images/aether_logo.png",
+        link: "blog-posts/aether-paraphrasing-feature.html",
+        author: "Madi Tabon",
+        edited: "2024-11-18T09:15:00",
+      },
+    ];
+
+    const blogContainer = document.getElementById("blog-container");
+    blogs.forEach((blog) => {
+      const blogCard = `
+        <div class="blog-card">
+          <img src="${blog.image}" alt="${blog.title}">
+          <h3>${blog.title}</h3>
+          <p>${blog.description}</p>
+          <p class="author-info">By ${blog.author} | Edited: ${new Date(blog.edited).toLocaleString()}</p>
+          <a href="${blog.link}" class="read-more">Read More</a>
+        </div>
+      `;
+      blogContainer.innerHTML += blogCard;
+    });
+  </script>
 </body>
 </html>
