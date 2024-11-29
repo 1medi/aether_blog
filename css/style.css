@@ -265,3 +265,70 @@ body {
 [data-theme="dark"] .footer-email {
   color: var(--card-text-dark);
 }
+
+
+/* Contact Form Section */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: var(--background-light);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+form .form-group {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--card-background-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form .submit-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--text-dark);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form .submit-btn:hover {
+  background-color: var(--hover-color);
+}
+
+[data-theme="dark"] form {
+  background-color: var(--card-background-dark);
+}
+
+[data-theme="dark"] form input,
+[data-theme="dark"] form textarea {
+  background-color: var(--card-background-dark);
+  color: var(--text-light);
+}
