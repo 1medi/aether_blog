@@ -14,6 +14,7 @@
         <button id="theme-toggler" class="theme-toggler">🌙</button>
       </div>
     </header>
+
     <nav class="navbar">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
@@ -23,12 +24,12 @@
         <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
+
     <main>
       <section class="container">
         <h1>Contact</h1>
         <p>Have questions or feedback? We'd love to hear from you! Please fill out the form below.</p>
         
-        <!-- Contact Form -->
         <form id="contactForm">
           <div class="form-group">
             <label for="name">Name *</label>
@@ -50,12 +51,22 @@
         </form>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <p>Saving Caretakers' Time, So They Can Focus On What Matters Most.</p>
       </div>
     </footer>
   </div>
+
+  <!-- Popup Modal -->
+  <div id="popupModal" class="popup-modal hidden">
+    <div class="popup-content">
+      <p id="popupMessage">Your comment has been submitted successfully!</p>
+      <button id="closePopup" class="close-popup">Close</button>
+    </div>
+  </div>
+
   <script src="js/index.js"></script>
 </body>
 </html>
