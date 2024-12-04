@@ -1,17 +1,19 @@
 <!doctype html>
 <html lang="en" data-theme="light">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aether - Blog</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
   <!-- Header -->
   <header class="header">
     <div class="container header-container">
       <img src="images/aether_logo.png" alt="Aether Logo" class="logo">
-      <button id="theme-toggler" class="theme-toggler">🌙</button>
+      <button id="theme-toggler" class="theme-toggler">🌘</button>
     </div>
     <div class="container header-content">
       <h1 class="title">Aether Blog</h1>
@@ -47,73 +49,80 @@
       <p class="footer-email">aetherformapp@gmail.com</p>
     </div>
   </footer>
-  <script src="js/index.js"></script>
   <script>
-    // Blog Data
+    document.addEventListener("DOMContentLoaded", () => {
     const blogs = [
+      {
+        title: "BTS: Aether's Promotional Video",
+        description: "Behind the scenes of Aether’s promo video shoot, highlighting the team’s effort.",
+        image: "images/filming.webp",
+        link: "blog-posts/filming-promotional-video.html",
+        author: "Zalida Khan",
+        edited: "2024-11-16 2:00 PM",
+      },
+      {
+        title: "Aether's Paraphrasing Feature",
+        description: "Learn about our new paraphrasing feature for caretakers.",
+        image: "images/para-cover.png",
+        link: "blog-posts/aether-paraphrasing-feature.html",
+        author: "Madi Tabon",
+        edited: "2024-11-11 10:00 AM",
+      },
+      {
+        title: "Aether's Storyboarding",
+        description: "Learn about storyboarding of Aether.",
+        image: "images/storyboarding3.png",
+        link: "blog-posts/storyboarding.html",
+        author: "Aether Team",
+        edited: "2024-10-26 09:30 AM",
+      },
+      {
+        title: "Aether's Planning",
+        description: "Learn about our new plan ideas about Aether.",
+        image: "images/aether-ideation-01.jpg",
+        link: "blog-posts/aether-planning.html",
+        author: "Aether Team",
+        edited: "2024-10-22 03:15 PM",
+      },
+      {
+        title: "Aether's Logo Ideations",
+        description: "Learn about how we come up with our logo designs.",
+        image: "images/logos-cover.png",
+        link: "blog-posts/logo-ideations.html",
+        author: "Aether Design Team",
+        edited: "2024-10-18 11:45 AM",
+      },
+      {
+        title: "Aether's A.I Assistant",
+        description: "Learn about how we utilized AI in Aether.",
+        image: "images/ai-cover.png",
+        link: "blog-posts/aether-ai-assistant.html",
+        author: "Trevor Tan",
+        edited: "2024-10-16 04:30 PM",
+      },
+      {
+        title: "Aether's Scan Docs Feature",
+        description: "Learn about our new scan documents feature for caretakers.",
+        image: "images/aether_logo.png",
+        link: "blog-posts/scan-docs.html",
+        author: "Trevor Tan",
+        edited: "2024-10-13 02:00 PM",
+      },
       {
         title: "Aether's Key Values",
         description: "Discover our three core values: Simplify, Summarize, and Streamline.",
         image: "images/aether_logo.png",
         link: "blog-posts/aether-key-values.html",
         author: "Parnell Tse",
-        edited: "2024-10-14T05:35:07",
-      },
-      {
-        title: "Aether's Paraphrasing Feature",
-        description: "Learn about our new paraphrasing feature for caretakers.",
-        image: "images/aether_logo.png",
-        link: "blog-posts/aether-paraphrasing-feature.html",
-        author: "Madi Tabon",
-        edited: "2024-11-11T05:35:07",
-      },
-      {
-        title: "Aether's Planning",
-        description: "Learn about our new plan ideas about Aether.",
-        image: "images/aether_logo.png",
-        link: "blog-posts/aether-planning.html",
-        author: "Aether Team",
-        edited: "2024-10-26T05:35:07",
-      },
-      {
-        title: "Aether's Storyboarding",
-        description: "Learn about storyboarding of Aether.",
-        image: "images/aether_logo.png",
-        link: "blog-posts/storyboarding.html",
-        author: "Aether Team",
-        edited: "2024-10-26T05:35:07",
-      },
-      {
-        title: "Aether's Logo Ideations",
-        description: "Learn about how we come up with our logo designs.",
-        image: "images/aether_logo.png",
-        link: "blog-posts/logo-ideations.html",
-        author: "Aether Design Team",
-        edited: "2024-10-16T05:35:07",
-      },
-      {
-        title: "Aether's A.I Assistant",
-        description: "Learn about how we utilized AI in Aether.",
-        image: "images/aether_logo.png",
-        link: "blog-posts/aether-ai-assistant.html",
-        author: "Trevor Tan",
-        edited: "2024-10-16T05:35:07",
-      },
-      {
-        title: "Aether's Scan Docs Feature",
-        description: "Learn about our new scan documents feature for caretakers.",
-        image: "images/aether_logo.png",
-        link: "blog-posts/aether-paraphrasing-feature.html",
-        author: "Trevor Tan",
-        edited: "2024-10-11T05:35:07",
+        edited: "2024-10-12 01:30 PM",
       },
       {
         title: "What is Aether",
         description: "Learn about what is Aether.",
-        image: "images/aether_logo.png",
-        link: "blog-posts/aether-paraphrasing-feature.html",
+        image: "images/aether_cover.jpg",
+        link: "blog-posts/what-is-aether.html",
         author: "Madi Tabon",
-        edited: "2024-10-15T05:35:07",
+        edited: "2024-10-10 08:00 AM",
       },
     ];
 
@@ -121,7 +130,7 @@
     blogs.forEach((blog) => {
       const blogCard = `
         <div class="blog-card">
-          <img src="${blog.image}" alt="${blog.title}">
+          <img class="blog-img" src="${blog.image}" alt="${blog.title}">
           <h3>${blog.title}</h3>
           <p>${blog.description}</p>
           <p class="author-info">By ${blog.author} | Edited: ${new Date(blog.edited).toLocaleString()}</p>
@@ -130,6 +139,24 @@
       `;
       blogContainer.innerHTML += blogCard;
     });
+
+    const themeToggler = document.getElementById("theme-toggler");
+      const rootElement = document.documentElement;
+
+      const savedTheme = localStorage.getItem("theme") || "light";
+      rootElement.setAttribute("data-theme", savedTheme);
+      themeToggler.textContent = savedTheme === "dark" ? "🌕" : "🌙";
+
+      themeToggler.addEventListener("click", () => {
+        const currentTheme = rootElement.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
+        rootElement.setAttribute("data-theme", newTheme);
+        themeToggler.textContent = newTheme === "dark" ? "🌕" : "🌙";
+        localStorage.setItem("theme", newTheme);
+      });
+    });
   </script>
+
 </body>
+
 </html>
