@@ -20,9 +20,9 @@ img {
   --text-light: #333333;
   --background-dark: #000000;
   --text-dark: #ffffff;
-  --primary-color: #174991;
-  --secondary-color: #115cad;
-  --hover-color: #10428a;
+  --primary-color: #0a425d;
+  --secondary-color: #207fa6;
+  --hover-color: #0a425d;
   --border-color: #ddd;
   --card-background-light: #f9f9f9;
   --card-background-dark: #1e1e1e;
@@ -218,7 +218,7 @@ body {
 
 .blog-card:nth-child(2) img {
   object-fit: contain;
-  background-color: #174991;
+  background-color: #0a425d;
   object-position: center;
 }
 
@@ -232,14 +232,14 @@ body {
 }
 
 .blog-card:nth-child(5) img {
-  background-color: #174991;
+  background-color: #0a425d;
   object-fit: contain;
   object-position: center;
 }
 
 .blog-card:nth-child(6) img {
   object-position: center;
-  background-color: #174991;
+  background-color: #0a425d;
   object-fit: contain;
 }
 
