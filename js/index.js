@@ -1,16 +1,34 @@
-// Light/Dark Mode Toggle
 const themeToggler = document.getElementById("theme-toggler");
 const rootElement = document.documentElement;
+const videoElement = document.querySelector(".cont-video");
+
+if (videoElement) {
+  videoElement.muted = true;
+  videoElement.loop = true;
+  videoElement.play().catch(error => {
+    console.error("Error playing the video:", error);
+  });
+}
+
+videoElement.addEventListener("click", () => {
+  if (videoElement.paused) {
+    videoElement.play().catch(error => {
+      console.error("Error playing the video:", error);
+    });
+  } else {
+    videoElement.pause();
+  }
+});
 
 const savedTheme = localStorage.getItem("theme") || "light";
 rootElement.setAttribute("data-theme", savedTheme);
-themeToggler.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+themeToggler.textContent = savedTheme === "dark" ? "🌕" : "🌙";
 
 themeToggler.addEventListener("click", () => {
   const currentTheme = rootElement.getAttribute("data-theme");
   const newTheme = currentTheme === "light" ? "dark" : "light";
   rootElement.setAttribute("data-theme", newTheme);
-  themeToggler.textContent = newTheme === "dark" ? "☀️" : "🌙";
+  themeToggler.textContent = newTheme === "dark" ? "🌕" : "🌙";
   localStorage.setItem("theme", newTheme);
 });
 

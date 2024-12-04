@@ -42,6 +42,7 @@
         <p>
           With just a quick scan of your document, Aether extracts the necessary details and auto-fills the forms for you—accurately and efficiently with the information you provide beforehand. Imagine scanning your tax return and seeing the fields populate themselves with your name, address, and financial details without lifting a pen or tapping a keyboard.
         </p>
+        <br/>
         <p>
           Not only does this streamline the process, but it also saves you from the headache of manual data entry. Having trouble understanding a question or a prompt? No worries! Aether's intelligent prompts ensure that even complex forms are handled correctly, leaving no detail behind. Whether you're working from your desk or on the go, you can trust that your documents are being processed with precision.
         </p>
@@ -60,27 +61,7 @@
     </div>
   </footer>
 
-  <!-- JavaScript -->
-  <script>
-    // Light/Dark Mode Toggle
-    const themeToggler = document.getElementById("theme-toggler");
-    const rootElement = document.documentElement;
+  <script src="../js/index.js"></script>
 
-    // Apply the saved theme or default to light
-    const savedTheme = localStorage.getItem("theme") || "light";
-    rootElement.setAttribute("data-theme", savedTheme);
-    themeToggler.textContent = savedTheme === "dark" ? "☀️" : "🌙";
-
-    // Add event listener for toggle
-    themeToggler.addEventListener("click", () => {
-      const currentTheme = rootElement.getAttribute("data-theme");
-      const newTheme = currentTheme === "light" ? "dark" : "light";
-
-      // Apply and save the new theme
-      rootElement.setAttribute("data-theme", newTheme);
-      themeToggler.textContent = newTheme === "dark" ? "☀️" : "🌙";
-      localStorage.setItem("theme", newTheme);
-    });
-  </script>
 </body>
 </html>
