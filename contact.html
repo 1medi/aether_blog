@@ -1,63 +1,71 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aether - Contact</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="container header-container">
-        <img src="images/aether_logo.png" alt="Aether Logo" class="logo">
-        <button id="theme-toggler" class="theme-toggler">🌙</button>
-      </div>
-    </header>
+  <header class="header">
+    <div class="container header-container">
+      <img src="images/aether_logo.png" alt="Aether Logo" class="logo">
+      <button id="theme-toggler" class="theme-toggler">🌙</button>
+    </div>
+    <div class="container header-content">
+      <h1 class="title">Contact Us</h1>
+      <p class="description">We value your feedback and questions. Reach out to us through the form below!</p>
+    </div>
+  </header>
 
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
 
-    <main>
-      <section class="container">
-        <h1>Contact</h1>
-        <p>Have questions or feedback? We'd love to hear from you! Please fill out the form below.</p>
+  <main>
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-description">Have questions or feedback? We'd love to hear from you! Please fill out the form below.</p>
         
-        <form id="contactForm">
+        <form id="contactForm" class="contact-form">
           <div class="form-group">
-            <label for="name">Name *</label>
-            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            <label for="name" class="form-label">Name *</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your Full Name" required>
           </div>
           <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            <label for="email" class="form-label">Email Address *</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="Your Email Address" required>
           </div>
           <div class="form-group">
-            <label for="phone">Phone Number (Optional)</label>
-            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+            <label for="phone" class="form-label">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Your Phone Number">
           </div>
           <div class="form-group">
-            <label for="comments">Comments *</label>
-            <textarea id="comments" name="comments" placeholder="Your Comments (Minimum 10 words)" required minlength="10"></textarea>
+            <label for="comments" class="form-label">Comments *</label>
+            <textarea id="comments" name="comments" class="form-textarea" placeholder="Your Comments (Minimum 10 words)" required minlength="10"></textarea>
           </div>
           <button type="submit" class="submit-btn">Submit</button>
         </form>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <p>Saving Caretakers' Time, So They Can Focus On What Matters Most.</p>
       </div>
-    </footer>
-  </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <img src="images/footer_logo.png" alt="Aether Logo" class="footer-logo">
+      <p class="footer-text">Saving Caretakers' Time, So They Can Focus On What Matters Most.</p>
+      <p class="footer-email">aetherformapp@gmail.com</p>
+    </div>
+  </footer>
 
   <!-- Popup Modal -->
   <div id="popupModal" class="popup-modal hidden">
@@ -68,8 +76,8 @@
   </div>
 
   <script>
-        document.addEventListener("DOMContentLoaded", () => {
-          const themeToggler = document.getElementById("theme-toggler");
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggler = document.getElementById("theme-toggler");
       const rootElement = document.documentElement;
 
       const savedTheme = localStorage.getItem("theme") || "light";
@@ -86,4 +94,5 @@
     });
   </script>
 </body>
+
 </html>
