@@ -5,17 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BTS: Promotional Video</title>
   <link href="../css/style.css" rel="stylesheet">
+  <style>
+    .video-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .video-gallery video {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .video-gallery figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    .video-gallery figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="container header-container">
       <img src="../images/aether_logo.png" alt="Aether Logo" class="logo">
       <button id="theme-toggler" class="theme-toggler">🌙</button>
     </div>
   </header>
-
-  <!-- Navigation -->
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="../index.html">Home</a></li>
@@ -26,7 +48,6 @@
     </ul>
   </nav>
 
-  <!-- Main Content -->
   <main>
     <section class="container">
       <h1 class="post-title">BTS: Aether's Promotional Video</h1>
@@ -37,10 +58,31 @@
           Our team spent 8 hours shooting the promotional video for Aether. With the help of two cameras and everyone pitching in, from actors to mic holders, directors, and camera people, we captured the footage needed to bring our vision to life.
         </p>
   
-        <div class="image-gallery">
-          <img src="../images/filming-promo-video-01.jpg" alt="Behind the Scenes 1">
-          <img src="../images/filming-promo-video-02.jpg" alt="Behind the Scenes 2">
-          <img src="../images/filming-promo-video-03.jpg" alt="Behind the Scenes 3">
+        <div class="video-gallery">
+          <figure>
+            <video src="../videos/behind_the_scene/C0046.MP4" controls>
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Behind the Scenes 1</figcaption>
+          </figure>
+          <figure>
+            <video src="../videos/behind_the_scene/C0049.MP4" controls>
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Behind the Scenes 2</figcaption>
+          </figure>
+          <figure>
+            <video src="../videos/behind_the_scene/C0105.MP4" controls>
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Behind the Scenes 3</figcaption>
+          </figure>
+          <figure>
+            <video src="../videos/behind_the_scene/godscene.mp4" controls>
+              Your browser does not support the video tag.
+            </video>
+            <figcaption>Behind the Scenes 4</figcaption>
+          </figure>
         </div>
   
         <h2>Team Effort</h2>
@@ -56,7 +98,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-container">
       <img src="../images/footer_logo.png" alt="Aether Logo" class="footer-logo">
@@ -67,7 +108,24 @@
     </div>
   </footer>
 
-  <script src="../js/index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const themeToggler = document.getElementById("theme-toggler");
+  const rootElement = document.documentElement;
+
+  const savedTheme = localStorage.getItem("theme") || "light";
+  rootElement.setAttribute("data-theme", savedTheme);
+  themeToggler.textContent = savedTheme === "dark" ? "🌕" : "🌙";
+
+  themeToggler.addEventListener("click", () => {
+    const currentTheme = rootElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    rootElement.setAttribute("data-theme", newTheme);
+    themeToggler.textContent = newTheme === "dark" ? "🌕" : "🌙";
+    localStorage.setItem("theme", newTheme);
+  });
+});
+</script>
 
 </body>
 </html>
