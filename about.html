@@ -1,13 +1,11 @@
 <!doctype html>
-<html lang="en" data-theme="light">
-
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Aether</title>
+  <title>Aether - About</title>
   <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body>
   <header class="header">
     <div class="container header-container">
@@ -15,11 +13,10 @@
       <button id="theme-toggler" class="theme-toggler">🌙</button>
     </div>
     <div class="container header-content">
-      <h1 class="title">About Aether</h1>
-      <p class="description">Transforming the caregiving experience, one form at a time.</p>
+      <h1 class="title">About Us</h1>
+      <p class="description">Learn more about Aether and our mission to simplify your form-filling process.</p>
     </div>
   </header>
-
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -29,40 +26,54 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-
   <main>
-    <section class="about-section">
-      <div class="container">
-        <h2 class="about-title">Who We Are</h2>
-        <p class="about-description">
-          Aether was born from a desire to alleviate the burden caregivers face when managing endless forms and documents. Our team, a collective of developers, designers, and marketers, brings together innovation and compassion to create an app that streamlines the caregiving process.
+    
+    <section class="about-aether">
+      <h2>About Aether</h2>
+      <div class="about-content">
+        <p>
+          Aether is here to help caregivers and individuals by simplifying the form-filling process. Our mission is to automate tedious tasks, clarify confusing language, and save valuable time, making paperwork easier for everyone.
         </p>
-
-        <h3 class="mission-title">Our Mission</h3>
-        <p class="mission-description">
-          We aim to save caregivers’ time, reduce stress, and allow them to focus on what truly matters—caring for their loved ones. By simplifying form-filling, clarifying legal jargon, and providing accessible tools, Aether transforms a tedious task into a seamless experience.
-        </p>
-
-        <h3 class="values-title">Our Core Values</h3>
-        <ul class="values-list">
-          <li><strong>Clarity:</strong> Simplify the complex.</li>
-          <li><strong>Efficiency:</strong> Save time and effort.</li>
-          <li><strong>Accessibility:</strong> Make caregiving tools inclusive and easy to use.</li>
-        </ul>
-
-        <h3 class="future-title">Our Vision for the Future</h3>
-        <p class="future-description">
-          Aether is just getting started. In the future, we plan to introduce features like:
-        </p>
-        <ul class="future-list">
-          <li>Photo-to-PDF functionality for on-the-go document handling.</li>
-          <li>An expanded library of supported forms for diverse caregiving needs.</li>
-          <li>Multilingual support to assist users worldwide.</li>
-        </ul>
       </div>
     </section>
-  </main>
+    
+      <h2 class="core-values">Our Core Values</h2>
+      <div class="review-container">
 
+      <div class="value-card clarify">
+        <div class="text-content">
+          <h3>Clarify</h3>
+          <p>
+            Aether turns complex terms into clear steps for confident form completion.
+          </p>
+        </div>
+        <img src="images/clarify2.png" alt="Clarify" class="section-image" />
+      </div>
+    
+      <div class="value-card summarize">
+        <div class="text-content">
+          <h3>Summarize</h3>
+          <p>
+            Aether highlights key points, saving you from reading lengthy documents.
+          </p>
+        </div>
+        <img src="images/summary2.png" alt="Summarize" class="section-image" />
+      </div>
+    
+      <div class="value-card streamline">
+        <div class="text-content">
+          <h3>Streamline</h3>
+          <p>
+            Aether automates form-filling and clarifies jargon, making the process efficient.
+          </p>
+        </div>
+        <img src="images/streamline2.png" alt="Streamline" class="section-image" />
+      </div>
+    </div>
+    
+    
+  </main>
+  
   <footer class="footer">
     <div class="container">
       <img src="images/footer_logo.png" alt="Aether Logo" class="footer-logo">
@@ -74,21 +85,21 @@
   <script>
     document.addEventListener("DOMContentLoaded", () => {
       const themeToggler = document.getElementById("theme-toggler");
-      const rootElement = document.documentElement;
+  const rootElement = document.documentElement;
 
-      const savedTheme = localStorage.getItem("theme") || "light";
-      rootElement.setAttribute("data-theme", savedTheme);
-      themeToggler.textContent = savedTheme === "dark" ? "🌕" : "🌙";
+  const savedTheme = localStorage.getItem("theme") || "light";
+  rootElement.setAttribute("data-theme", savedTheme);
+  themeToggler.textContent = savedTheme === "dark" ? "🌕" : "🌙";
 
-      themeToggler.addEventListener("click", () => {
-        const currentTheme = rootElement.getAttribute("data-theme");
-        const newTheme = currentTheme === "light" ? "dark" : "light";
-        rootElement.setAttribute("data-theme", newTheme);
-        themeToggler.textContent = newTheme === "dark" ? "🌕" : "🌙";
-        localStorage.setItem("theme", newTheme);
-      });
-    });
-  </script>
+  themeToggler.addEventListener("click", () => {
+    const currentTheme = rootElement.getAttribute("data-theme");
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    rootElement.setAttribute("data-theme", newTheme);
+    themeToggler.textContent = newTheme === "dark" ? "🌕" : "🌙";
+    localStorage.setItem("theme", newTheme);
+  });
+});
+</script>
+
 </body>
-
 </html>
