@@ -1,6 +1,8 @@
 const themeToggler = document.getElementById("theme-toggler");
 const rootElement = document.documentElement;
 const videoElement = document.querySelector(".cont-video");
+const featureImages = document.querySelectorAll(".feature-image");
+
 
 if (videoElement) {
   videoElement.muted = true;
@@ -19,17 +21,35 @@ videoElement.addEventListener("click", () => {
     videoElement.pause();
   }
 });
-
 const savedTheme = localStorage.getItem("theme") || "light";
 rootElement.setAttribute("data-theme", savedTheme);
 themeToggler.textContent = savedTheme === "dark" ? "🌕" : "🌙";
 
+// Function to update image sources
+function updateImagesForTheme(theme) {
+  featureImages.forEach(img => {
+    const darkSrc = img.getAttribute("data-dark-src"); 
+    const lightSrc = img.getAttribute("src"); 
+
+    if (theme === "dark") {
+      img.setAttribute("src", darkSrc); 
+    } else {
+      img.setAttribute("src", lightSrc.replace("-dark", "-light"));
+    }
+  });
+}
+
+updateImagesForTheme(savedTheme);
+
 themeToggler.addEventListener("click", () => {
   const currentTheme = rootElement.getAttribute("data-theme");
   const newTheme = currentTheme === "light" ? "dark" : "light";
+
   rootElement.setAttribute("data-theme", newTheme);
   themeToggler.textContent = newTheme === "dark" ? "🌕" : "🌙";
   localStorage.setItem("theme", newTheme);
+
+  updateImagesForTheme(newTheme); 
 });
 
 // Contact Form Submission
